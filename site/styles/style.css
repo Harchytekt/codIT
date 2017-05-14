@@ -1,0 +1,152 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    /*font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;*/
+    font-family: 'Helvetica Neue', 'Exo 2', Calibri, Arial, sans-serif;
+}
+body {
+    background-color: #2AB77E;
+}
+
+/* NAV */
+
+nav div#current, #current p {
+    background-color: #FDDC5F;
+    color: #2AB77E;
+    cursor: default;
+}
+
+/* BODY */
+
+h1, h2 {
+    font-weight: lighter;
+    color: #FFF;
+}
+h1 {
+    position: absolute;
+        top: 20vh;
+        left: 18vw;
+    font-size: 64px;
+}
+h2 {
+    opacity: 0.5;
+}
+h2#title {
+    opacity: 1;
+    font-size: 3.5rem;
+    text-align: center;
+}
+#movingQuestions {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden /* To contain the text within the element. */
+}
+#item1, #item3 {
+    position: relative;
+        top: 0;
+        left: 0;
+}
+#item2, #item4 {
+    position: relative;
+        top: 0;
+        left: 70%;
+}
+
+/* MAIN */
+
+main {
+    position: relative;
+        top: 15vh;
+        left: 0;
+}
+.presentation {
+	display: block;
+	margin: 0 auto;
+	width: 70%;
+	padding: 40px;
+    background-color: #FFF;
+	background-color: rgba(255, 255, 255, 0.5);
+	/*border-radius: 15px 50px;*/
+    border-radius: 10px 30px;
+}
+div#left {
+    float: left;
+    width: 33%;
+}
+div#center {
+    float: left;
+    width: 33%;
+}
+div#right {
+    float: right;
+    width: 33%;
+}
+.presentation h3 {
+    color: #FFF;
+    /*font-weight: lighter;*/
+    font-weight: normal;
+    text-align: center;
+}
+form {
+    display: block;
+    text-align: center;
+}
+div#left .insideText {
+    border-right: 1px dashed grey;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+div#left p {
+    padding: 0 1vh;
+    margin-bottom: 16px;
+}
+div#right form {
+    border-left: 1px dashed grey;
+    border-radius: 5px;
+}
+form input.login {
+    display: block;
+    margin: 1vh auto 3vh auto;
+    background-color: rgba(255, 255, 255, 0.74);
+    border: none;
+    border-bottom: 1px solid #808080;
+    text-align: center;
+    font-size: 1.1em;
+    /*color: #2AB77E;
+    text-shadow: 1px 1px 1px #F2F2F2;*/
+    color: #FD8002;
+    transition: background-color 1.5s;
+    width: 65%;
+}
+form input.login:hover, form input.login:focus {
+    /* Override the default border on focus. */
+    outline: none !important;
+    background-color: rgba(255, 255, 255, 0.01) !important
+}
+form input[type=submit] {
+    /*color:#0056D6;*/
+    color: #FD8002;
+    text-decoration: none;
+}
+.error {
+    font-weight: bold;
+    text-shadow: 0px 0px 7px #FFF;
+    position: relative;
+        top: 20px;
+        left: auto;
+}
+.error#log {
+    color:#F00;
+}
+.error#access {
+    color:#F70;
+}
+.error#created {
+    color: #FF0;
+    text-shadow: 0px 0px 7px #000;
+}
+.clear {
+    clear: both;
+}

@@ -1,0 +1,34 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+body {
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+    background-image: url('../img/backgrounds/error503.jpg');
+}
+#logo {
+    position: absolute;
+        top: 35px;
+        left: 25px;
+}
+#admin {
+    padding-top: 4%;
+    position: absolute;
+        bottom: 5%;
+        left: 0;
+        right: 0;
+}
+#admin a {
+    text-decoration: none;
+    cursor: default;
+}
+#admin img {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}

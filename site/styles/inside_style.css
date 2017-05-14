@@ -1,0 +1,396 @@
+body {
+    background-image: url('../img/backgrounds/bg.png');
+}
+nav {
+    display: none;
+    background-color: #A2E1C8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    z-index: 4; /* Header above the rest */
+    -webkit-backdrop-filter: brightness(1.5) blur(4px);
+}
+nav p {
+    text-decoration: none;
+    display: block;
+    color: #FDDC5F;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 1em 0px;
+}
+nav div {
+    display: inline-block;
+    width: 25%;
+    background-color: #2AB77E;
+}
+nav div.tab:hover, nav div.tab:hover p {
+    background-color: #FAFFAF;
+    color: #2AB77E;
+    cursor: pointer;
+}
+nav div#logout p {
+    color: #C22310;
+}
+.content {
+    width: 70%;
+    margin: 0 auto;
+}
+/*h2 {
+    color: #FFF;
+    opacity: 1;
+    font-size: 64px;
+    font-family: Monaco, Menlo, Consolas, Calibri, Arial, sans-serif;
+}*/
+.flex-container {
+    padding: 0;
+    margin: 0;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+.flex-item {
+    background-color: rgba(255, 255, 255, 0.75);
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.4);
+    padding: 5px;
+    width: 250px;
+    height: 100px;
+    margin: 10px 0 50px 50px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* Course */
+
+.flex-item.locked {
+    cursor: not-allowed;
+}
+.flex-item.locked * h3, .flex-item.locked * p {
+    opacity: 0.5;
+}
+.flex-item h3 {
+    margin: 0;
+    text-align: center;
+
+    line-height: 100px;
+    font-weight: bold;
+    font-size: 1.6em;
+
+    transition: font-size 0.6s;
+}
+.flex-item .hidden {
+    display: none;
+    font-size: 1rem;
+    margin: 0 auto;
+}
+.flex-item.hover h3 {
+    line-height: normal;
+    font-size: 1em;
+}
+.insideText {
+    width: 100%;
+    height: 99%;
+}
+.flex-item .hidden p {
+    text-align: center;
+}
+.lockContainer {
+    padding: 0;
+    position: relative;
+}
+.lockContainer .lock {
+    display: inline-block;
+    position: absolute;
+        bottom: 0px;
+        right: 0px;
+}
+.btn.quizz {
+    display: inline-block;
+    position: relative;
+        top: 50px;
+        left: auto;
+    margin-bottom: 60px;
+}
+#intro .btn.quizz {
+    margin-bottom: 20px;
+}
+.btn.quizz {
+    color: #FFF;
+    text-decoration: none;
+    padding: 5px 15px;
+    background-color: #2AB77E;
+    border-left: 10px solid #03881C;
+    border-radius: 0px 5px 5px 0px;
+    transition: 1s;
+}
+.btn.quizz:hover, .btn.quizz:focus {
+    border-left: 5px solid #CC6905;
+    background-color: #FD8002;
+}
+
+
+/* Trophies */
+
+.flex-container.trophies {
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+}
+.flex-container.trophies .flex-item {
+    overflow: visible;
+    width: 100px;
+    height: 100px;
+    margin: 10px 10% 50px 50px;
+
+    line-height: 100px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.6em;
+    border-radius: 400px;
+    position: relative;
+    cursor: pointer;
+
+    -webkit-transition: all 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: all 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: all 1s;
+    -o-transform-style: preserve-3d;
+    transition: all 1s;
+    transform-style: preserve-3d;
+}
+/*.flex-item.unlocked:hover {*/
+.flex-container.trophies .flex-item:hover {
+    transform: rotateY(180deg);
+    box-shadow: -3px 3px 1px rgba(0, 0, 0, 0.4);
+}
+.heads, .tails {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.heads {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+.tails {
+    transform: rotateY(180deg);
+}
+.heads p, .tails p {
+    margin: auto;
+}
+.tails p {
+    position: absolute;
+        bottom: 100%;
+        left: 27%;
+    color: #B51B01;
+}
+.tails.succeeded p {
+    position: absolute;
+        bottom: 100%;
+        left: 27%;
+    color: #2AB77E;
+}
+
+/* Chapter */
+
+.slide-content {
+    /*width: 70%;*/
+    width: 75%;
+    margin: 0 auto;
+}
+.chapter.content {
+    padding-bottom: 30px;
+}
+#vignette {
+    background-color: rgba(255, 255, 255, 0.75);
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.4);
+    padding: 5px;
+    padding-bottom: 15px;
+    height: auto;
+    overflow: hidden;
+}
+#vignette h2, #vignette h3, #vignette h4, #vignette h5 {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+#vignette h2 {
+    font-size: 2.5rem;
+    opacity: 1;
+    text-align: center;
+    color: black;
+}
+#vignette h3, #vignette h4, #vignette h5 {
+    color: #2AB77E;
+}
+#vignette h5 {
+    font-size: 0.9em;
+}
+.bold {
+    font-weight: bold;
+}
+.underline {
+    text-decoration: underline;
+}
+.italic {
+    font-style: italic;
+}
+.code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    color: #FD8002;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+}
+.wrong {
+    color: #FF2400;
+}
+blockquote {
+    margin: 10px 0 10px 50px;
+    padding-left: 15px;
+    border-left: 3px solid #FDDC5F;
+    font-style: italic;
+}
+
+/* Quizz */
+
+fieldset {
+    font-family: Monaco, Menlo, Consolas, Calibri, Arial, sans-serif;
+    text-align: left;
+    border: none;
+    /*margin-bottom: 50px;*/
+}
+fieldset legend {
+    text-align: center;
+    text-decoration: underline;
+}
+.btn.return {
+    background-color: #2AB77E;
+    color: #FFF;
+    padding: 5px 15px;
+}
+.quizz #vignette .left, .quizz #vignette .right {
+    width: 49%;
+}
+#vignette h3.question {
+    text-decoration: underline;
+    color: #000;
+    font-size: 1rem;
+    font-weight: normal;
+}
+#vignette h3.quizzResult {
+    text-align: center;
+}
+#vignette h3.quizzResult.wasted {
+    color: #B51B01;
+}
+#vignette .response {
+    color: #0089D6;
+}
+#vignette .explaination {
+    color: #CE522F;
+}
+.btn.return, .quizz #vignette input[type=submit] {
+    margin-top: 25px;
+}
+
+/* Account */
+
+#vignette.account {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#vignette .left, #vignette .right {
+    width: 50%;
+    text-align: center;
+}
+#vignette .left {
+    float: left;
+}
+#vignette .right {
+    float: right;
+}
+#vignette .right #middle {
+    padding-top: 17%;
+}
+#vignette.account {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+form input.login:disabled {
+    background-color: #D7D7D7;
+}
+form input.login:disabled:hover, form input.login:disabled:focus {
+    background-color: #D7D7D7 !important;
+}
+.changingData {
+    display: none;
+}
+.changingData .btn {
+    display: inline-block;
+}
+.button, .btn, input[type=submit] {
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.button p, .btn p {
+    padding: 5px;
+    margin: 0;
+}
+.changingData {
+    display: none;
+    margin: 0 auto;
+}
+.changingData.wid {
+    width: 40%;
+    margin-top: 20px;
+}
+.changeData, .changePwd, .deactivateAccount {
+    margin: 0 auto;
+    width: 40%;
+    text-align: center;
+    color: #FFF;
+}
+.changeData {
+    background-color: #0089D6;
+}
+.saveChanges, .cancelChanges, .btn.return {
+    display: inline-block;
+}
+.cancelChanges {
+    background-color: #DE5833;
+    color: #FFF;
+    width: 20%;
+}
+.changePwd {
+    background-color: #3A3A3A;
+}
+.deactivateAccount {
+    margin-top: 40px;
+    background-color: #B51B01;
+}
+form input[type=submit] {
+    padding:5px 15px;
+    margin: 0;
+    color: #FFF;
+    background-color: #2AB77E;
+    border: 0 none;
+    font-size: 1rem;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .content {
+        width: 90%;
+    }
+}

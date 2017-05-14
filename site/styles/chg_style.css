@@ -1,0 +1,13 @@
+main {
+    top: 110px;
+}
+h1 {
+    position: relative;
+    margin-bottom: 10vh;
+}
+.changingData {
+    display: block;
+}
+form input.text {
+    width: 30%;
+}
