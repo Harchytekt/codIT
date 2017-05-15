@@ -47,6 +47,45 @@
         </div>
         <div class="cslide-slide">
             <div class="slide-content">
+                <h4>Revoici le petit test pour voir où vous en êtes…</h4>
+
+                <fieldset class="qcm1">
+                    <legend>Question 1</legend>
+                    <label>Une expression booléenne est :</label><br><br>
+                    <input type="radio" name="qcm1" id="qcm1_1" value="1" checked="checked">
+                    <label for="qcm1_1"><span class="bold">toujours vraie.</span>
+                    <span class="concealed wrong">Faux</span></label><br><br>
+
+                    <input type="radio" name="qcm1" id="qcm1_2" value="2">
+                    <label for="qcm1_2"><span class="bold">une expression qui retourne vrai et faux.</span>
+                    <span class="concealed wrong">Incorrect</span></label><br><br>
+
+                    <input type="radio" name="qcm1" id="qcm1_3" value="3">
+                    <label for="qcm1_3"><span class="bold">une expression qui retourne soit vrai, soit faux.</span>
+                    <span class="concealed ok">C'est ça !</span></label>
+                </fieldset><br>
+
+                <fieldset class="qcm2">
+                    <legend>Question 2</legend>
+                    <label>Quelle valeur est de type <span class="bold">bool</span> ?</label><br><br>
+                    <input type="radio" name="qcm2" id="qcm2_1" value="1" checked="checked">
+                    <label for="qcm2_1"><span class="bold">False</span>
+                    <span class="concealed ok">Vrai</span></label><br><br>
+
+                    <input type="radio" name="qcm2" id="qcm2_2" value="2">
+                    <label for="qcm2_2"><span class="bold">true</span>
+                    <span class="concealed wrong">Faux</span></label><br><br>
+
+                    <input type="radio" name="qcm2" id="qcm2_3" value="3">
+                    <label for="qcm2_3"><span class="bold">'False'</span>
+                    <span class="concealed wrong">Presque</span></label>
+                </fieldset>
+
+                <h4>Continuons ! 👨🏻‍💻</h4>
+            </div>
+        </div>
+        <div class="cslide-slide">
+            <div class="slide-content">
                 <h3>Les opérateurs de comparaison</h3>
 
                 <p>
@@ -113,6 +152,45 @@
                         </li>
                     </ol>
                 </blockquote>
+            </div>
+        </div>
+        <div class="cslide-slide">
+            <div class="slide-content">
+                <h4>C'est déjà le dernier !</h4>
+
+                <fieldset class="qcm3">
+                    <legend>Question 1</legend>
+                    <label>Qu'est-ce qu'un opérateur de comparaison ?</label><br><br>
+                    <input type="radio" name="qcm3" id="qcm3_1" value="1" checked="checked">
+                    <label for="qcm3_1"><span class="bold">un opérateur qui est utilisé pour calculer des valeurs.</span>
+                    <span class="concealed wrong">C'est faux</span></label><br><br>
+
+                    <input type="radio" name="qcm3" id="qcm3_2" value="2">
+                    <label for="qcm3_2"><span class="bold">un opérateur qui compare deux variables.</span>
+                    <span class="concealed ok">Correct !</span></label><br><br>
+
+                    <input type="radio" name="qcm3" id="qcm3_3" value="3">
+                    <label for="qcm3_3"><span class="bold">un opérateur qui compare deux types.</span>
+                    <span class="concealed wrong">Mauvais</span></label>
+                </fieldset><br>
+
+                <fieldset class="qcm4">
+                    <legend>Question 2</legend>
+                    <label>Lequel de ces opérateurs de comparaison est incorrect ?</label><br><br>
+                    <input type="radio" name="qcm4" id="qcm4_1" value="1" checked="checked">
+                    <label for="qcm4_1"><span class="bold">!=</span>
+                    <span class="concealed wrong">Mauvais</span></label><br><br>
+
+                    <input type="radio" name="qcm4" id="qcm4_2" value="2">
+                    <label for="qcm4_2"><span class="bold"><=</span>
+                    <span class="concealed wrong">Non</span></label><br><br>
+
+                    <input type="radio" name="qcm4" id="qcm4_3" value="3">
+                    <label for="qcm4_3"><span class="bold">=></span>
+                    <span class="concealed ok">Correct</span></label>
+                </fieldset>
+
+                <h4>On se reverra au prochain chapitre ! 😉</h4>
             </div>
         </div>
         <div class="cslide-slide">

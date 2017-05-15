@@ -71,6 +71,15 @@
             $('.btn.quizz').click(function() {
                 window.location = "quizz.php";
             });
+
+            $('input').change(function() {
+                lbl  = $('label[for='+$(this).attr('id')+']');
+                item = lbl.find('.concealed');
+                cls  = $(this).parent().attr('class');
+                
+                $('.'+cls+' .concealed').css('display', 'none');
+                item.css('display', 'inline');
+            });
         </script>
     </body>
 </html>

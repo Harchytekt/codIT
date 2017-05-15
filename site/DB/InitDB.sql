@@ -10,11 +10,11 @@ VALUES
 
 INSERT INTO Results (chapter, score, state)
 VALUES
-(1, 7, 1);
+(1, 10, 1), (2, 10, 1), (3, 10, 1), (4, 10, 1), (5, 10, 1);
 
 INSERT INTO Results (chapter)
 VALUES
-(2), (3), (4), (5), (6), (7);
+(6), (7);
 
 INSERT INTO Results (chapter, state)
 VALUES

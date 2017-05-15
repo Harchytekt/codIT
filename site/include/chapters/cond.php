@@ -41,7 +41,7 @@
                     une instruction conditionnelle.<br>
                     Le prédicat est écrit à la suite,
                     <span class="italic">souvent entre parenthèses</span>, et
-                    est terminée par <span class="bold">:</span>.<br>
+                    est suivi par <span class="bold">:</span>.<br>
                     Le code à exécuter si la condition est vérifiée doit être
                     <span class="bold"><span class="italic">indenté</span></span>
                     une fois.
@@ -71,6 +71,46 @@
         >>>     print("La variable est négative ou nulle.")</code>
 </pre>
                 </p>
+            </div>
+        </div>
+        <div class="cslide-slide">
+            <div class="slide-content">
+                <h4>Voici notre petit rendez-vous en début de chapitre…</h4>
+
+                <fieldset class="qcm1">
+                    <legend>Question 1</legend>
+                    <label>Un prédicat n'est pas :</label><br><br>
+                    <input type="radio" name="qcm1" id="qcm1_1" value="1" checked="checked">
+                    <label for="qcm1_1"><span class="bold">indenté.</span>
+                    <span class="concealed wrong">Incorrect</span></label><br><br>
+
+                    <input type="radio" name="qcm1" id="qcm1_2" value="2">
+                    <label for="qcm1_2"><span class="bold">de type float.</span>
+                    <span class="concealed ok">Correct</span></label><br><br>
+
+                    <input type="radio" name="qcm1" id="qcm1_3" value="3">
+                    <label for="qcm1_3"><span class="bold">indispensable aux instructions conditionnelles.</span>
+                    <span class="concealed wrong">Non</span></label>
+                </fieldset><br>
+
+                <fieldset class="qcm2">
+                    <legend>Question 2</legend>
+                    <label>Choisis la bonne réponse :</label><br><br>
+                    <input type="radio" name="qcm2" id="qcm2_1" value="1" checked="checked">
+                    <label for="qcm2_1"><span class="bold">Le code à l'intérieur
+                    du <span class="code">if</span>  doit être indenté quatre fois.</span>
+                    <span class="concealed wrong">Non</span></label><br><br>
+
+                    <input type="radio" name="qcm2" id="qcm2_2" value="2">
+                    <label for="qcm2_2"><span class="bold">Une indentation est un décalage du code vers la droite.</span>
+                    <span class="concealed ok">Correct !</span></label><br><br>
+
+                    <input type="radio" name="qcm2" id="qcm2_3" value="3">
+                    <label for="qcm2_3"><span class="bold">Le prédicat est suivi par ;.</span>
+                    <span class="concealed wrong">Non</span></label>
+                </fieldset>
+
+                <h4>Et ça continue ! 👨🏻‍💻</h4>
             </div>
         </div>
         <div class="cslide-slide">
@@ -116,6 +156,45 @@
         >>>     print("La variable est strictement positive.")</code>
 </pre>
                 </p>
+            </div>
+        </div>
+        <div class="cslide-slide">
+            <div class="slide-content">
+                <h4>Plus qu'un avant la fin du chapitre !</h4>
+
+                <fieldset class="qcm3">
+                    <legend>Question 1</legend>
+                    <label><span class="code">else</span> signifie :</label><br><br>
+                    <input type="radio" name="qcm3" id="qcm3_1" value="1" checked="checked">
+                    <label for="qcm3_1"><span class="bold">si</span>
+                    <span class="concealed wrong">Non</span></label><br><br>
+
+                    <input type="radio" name="qcm3" id="qcm3_2" value="2">
+                    <label for="qcm3_2"><span class="bold">sinon si</span>
+                    <span class="concealed wrong">Mauvais</span></label><br><br>
+
+                    <input type="radio" name="qcm3" id="qcm3_3" value="3">
+                    <label for="qcm3_3"><span class="bold">sinon</span>
+                    <span class="concealed ok">Oui !</span></label>
+                </fieldset><br>
+
+                <fieldset class="qcm4">
+                    <legend>Question 2</legend>
+                    <label>La position du <span class="code">else</span> est :</label><br><br>
+                    <input type="radio" name="qcm4" id="qcm4_1" value="1" checked="checked">
+                    <label for="qcm4_1"><span class="bold">à la fin.</span>
+                    <span class="concealed ok">Mauvais</span></label><br><br>
+
+                    <input type="radio" name="qcm4" id="qcm4_2" value="2">
+                    <label for="qcm4_2"><span class="bold">au début.</span>
+                    <span class="concealed wrong">Non</span></label><br><br>
+
+                    <input type="radio" name="qcm4" id="qcm4_3" value="3">
+                    <label for="qcm4_3"><span class="bold">où on veut.</span>
+                    <span class="concealed wrong">Mauvais</span></label>
+                </fieldset>
+
+                <h4>C'est bientôt fini… 👉🏻</h4>
             </div>
         </div>
         <div class="cslide-slide">
@@ -170,6 +249,47 @@
         >>>     print("La variable est supérieure ou égale à 10.")</code>
 </pre>
                 </p>
+            </div>
+        </div>
+        <div class="cslide-slide">
+            <div class="slide-content">
+                <h4>Si tout va bien, vous le réussirez !</h4>
+
+                <fieldset class="qcm5">
+                    <legend>Question 1</legend>
+                    <label>L'ordre doit être :</label><br><br>
+                    <input type="radio" name="qcm5" id="qcm5_1" value="1" checked="checked">
+                    <label for="qcm5_1"><span class="bold">au choix.</span>
+                    <span class="concealed wrong">Non</span></label><br><br>
+
+                    <input type="radio" name="qcm5" id="qcm5_2" value="2">
+                    <label for="qcm5_2"><span class="bold"><span class="code">if</span>
+                    - <span class="code">else</span> - <span class="code">elif</span></span>
+                    <span class="concealed wrong">Mauvais</span></label><br><br>
+
+                    <input type="radio" name="qcm5" id="qcm5_3" value="3">
+                    <label for="qcm5_3"><span class="bold"><span class="code">if</span>
+                    - <span class="code">elif</span> - <span class="code">else</span></span>
+                    <span class="concealed ok">C'est bon !</span></label>
+                </fieldset><br>
+
+                <fieldset class="qcm6">
+                    <legend>Question 2</legend>
+                    <label>Le <span class="code">elif</span> sert à : </label><br><br>
+                    <input type="radio" name="qcm6" id="qcm6_1" value="1" checked="checked">
+                    <label for="qcm6_1"><span class="bold">conclure la structure conditionnelle.</span>
+                    <span class="concealed wrong">Et non</span></label><br><br>
+
+                    <input type="radio" name="qcm6" id="qcm6_2" value="2">
+                    <label for="qcm6_2"><span class="bold">vérifier les conditions précédentes.</span>
+                    <span class="concealed wrong">Non</span></label><br><br>
+
+                    <input type="radio" name="qcm6" id="qcm6_3" value="3">
+                    <label for="qcm6_3"><span class="bold">rajouter une condition si la précédente est fausse.</span>
+                    <span class="concealed ok">Correct</span></label>
+                </fieldset>
+
+                <h4>Voici venir le grand test ! 📄</h4>
             </div>
         </div>
         <div class="cslide-slide">

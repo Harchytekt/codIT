@@ -29,8 +29,8 @@
                     $answers[4] = ($q3[0] == 3);
                 } else if (count($q3) == 2) {
                     $answers[2] = ($q3[0] == 1);
-                    $answers[3] = ($q3[2] == 2);
-                    $answers[4] = ($q3[2] == 3);
+                    $answers[3] = ($q3[1] == 2);
+                    $answers[4] = ($q3[1] == 3);
                 } else if (count($q3) == 3) {
                     $answers[2] = ($q3[0] == 1);
                     $answers[3] = ($q3[1] == 2);

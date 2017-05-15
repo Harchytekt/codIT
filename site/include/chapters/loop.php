@@ -83,6 +83,46 @@
         </div>
         <div class="cslide-slide">
             <div class="slide-content">
+                <h4>On continue d'avancer !</h4>
+
+                <fieldset class="qcm1">
+                    <legend>Question 1</legend>
+                    <label>Un autre nom pour &lsquo;<span class="italic">boucle</span>&rsquo; est :</label><br><br>
+                    <input type="radio" name="qcm1" id="qcm1_1" value="1" checked="checked">
+                    <label for="qcm1_1"><span class="bold">structure itérative.</span>
+                    <span class="concealed ok">C'est bien ça !</span></label><br><br>
+
+                    <input type="radio" name="qcm1" id="qcm1_2" value="2">
+                    <label for="qcm1_2"><span class="bold">boucle infinie.</span>
+                    <span class="concealed wrong">Nooon !</span></label><br><br>
+
+                    <input type="radio" name="qcm1" id="qcm1_3" value="3">
+                    <label for="qcm1_3"><span class="bold">structure impérative.</span>
+                    <span class="concealed wrong">Non</span></label>
+                </fieldset><br>
+
+                <fieldset class="qcm2">
+                    <legend>Question 2</legend>
+                    <label>La boucle <span class="code">if</span> :</label><br><br>
+                    <input type="radio" name="qcm2" id="qcm2_1" value="1" checked="checked">
+                    <label for="qcm2_1"><span class="bold">est une structure répétitive.</span>
+                    <span class="concealed wrong">Non</span></label><br><br>
+
+                    <input type="radio" name="qcm2" id="qcm2_2" value="2">
+                    <label for="qcm2_2"><span class="bold">est une sorte de boucle infinie.</span>
+                    <span class="concealed wrong">Faux</span></label><br><br>
+
+                    <input type="radio" name="qcm2" id="qcm2_3" value="3">
+                    <label for="qcm2_3"><span class="bold">n'est pas une boucle, mais une
+                    <span class="italic">instruction conditionnelle</span>.</span>
+                    <span class="concealed ok">Oui !</span></label>
+                </fieldset>
+
+                <h4>Plus que deux QCM et c'est le quizz ! 💯</h4>
+            </div>
+        </div>
+        <div class="cslide-slide">
+            <div class="slide-content">
                 <h3>Types de boucles</h3>
 
                 <p>
@@ -171,6 +211,45 @@
         </div>
         <div class="cslide-slide">
             <div class="slide-content">
+                <h4>C'est la fin… du chapitre !</h4>
+
+                <fieldset class="qcm3">
+                    <legend>Question 1</legend>
+                    <label>Laquelle est fausse ?</label><br><br>
+                    <input type="radio" name="qcm3" id="qcm3_1" value="1" checked="checked">
+                    <label for="qcm3_1"><span class="bold">Le <span class="code">if</span> est une boucle spéciale.</span>
+                    <span class="concealed ok">Correct !</span></label><br><br>
+
+                    <input type="radio" name="qcm3" id="qcm3_2" value="2">
+                    <label for="qcm3_2"><span class="bold">Il existe différents types de boucle.</span>
+                    <span class="concealed wrong">Raté</span></label><br><br>
+
+                    <input type="radio" name="qcm3" id="qcm3_3" value="3">
+                    <label for="qcm3_3"><span class="bold">Si la boucle est vraie, la boucle se répète.</span>
+                    <span class="concealed wrong">Non</span></label>
+                </fieldset><br>
+
+                <fieldset class="qcm4">
+                    <legend>Question 2</legend>
+                    <label>À quoi sert l'incrémentation ?</label><br><br>
+                    <input type="radio" name="qcm4" id="qcm4_1" value="1" checked="checked">
+                    <label for="qcm4_1"><span class="bold">Elle sert à calculer la valeur d'une variable.</span>
+                    <span class="concealed wrong">Mauvais</span></label><br><br>
+
+                    <input type="radio" name="qcm4" id="qcm4_2" value="2">
+                    <label for="qcm4_2"><span class="bold">Elle sert à diminuer la valeur d'une variable.</span>
+                    <span class="concealed wrong">Noooon !</span></label><br><br>
+
+                    <input type="radio" name="qcm4" id="qcm4_3" value="3">
+                    <label for="qcm4_3"><span class="bold">Elle sert à augmenter la valeur d'une variable.</span>
+                    <span class="concealed ok">Correct</span></label>
+                </fieldset>
+
+                <h4>Plus qu'un ! 👌🏻</h4>
+            </div>
+        </div>
+        <div class="cslide-slide">
+            <div class="slide-content">
                 <h4>La boucle <span class="code">for</span></h4>
 
                 <p>
@@ -189,7 +268,7 @@
                 <blockquote>
                     <span class="underline">Remarque :</span><br><br>
                     Dans certains langages, vous retrouverez cette boucle sous
-                    le nom de <span class="italic">foreach</span>.
+                    le nom de <span class="code">foreach</span>.
                 </blockquote>
 
                 <p>
@@ -225,12 +304,51 @@
                 <blockquote>
                     <span class="underline">Information :</span><br><br>
                     On apprend ici que les chaînes de caractères sont des
-                    séquences (<span class="italic">ou collections de ordonnées
+                    séquences (<span class="italic">ou collections ordonnées
                     d'éléments</span>).<br>
                     Il existe d'autres types de séquences comme les
                     <span class="bold">tuples</span> ou les
                     <span class="bold">listes</span>.
                 </blockquote>
+            </div>
+        </div>
+        <div class="cslide-slide">
+            <div class="slide-content">
+                <h4>Un dernier avant le quizz !</h4>
+
+                <fieldset class="qcm5">
+                    <legend>Question 1</legend>
+                    <label>La boucle utilisée sur les séquences s'appelle :</label><br><br>
+                    <input type="radio" name="qcm5" id="qcm5_1" value="1" checked="checked">
+                    <label for="qcm5_1"><span class="bold"><span class="code">while</span></span>
+                    <span class="concealed wrong">Non</span></label><br><br>
+
+                    <input type="radio" name="qcm5" id="qcm5_2" value="2">
+                    <label for="qcm5_2"><span class="bold"><span class="code">for</span></span>
+                    <span class="concealed ok">C'est bon !</span></label><br><br>
+
+                    <input type="radio" name="qcm5" id="qcm5_3" value="3">
+                    <label for="qcm5_3"><span class="bold"><span class="code">foreach</span></span>
+                    <span class="concealed wrong">Mauvais</span></label>
+                </fieldset><br>
+
+                <fieldset class="qcm6">
+                    <legend>Question 2</legend>
+                    <label>Choisissez l'affirmation erronée !</label><br><br>
+                    <input type="radio" name="qcm6" id="qcm6_1" value="1" checked="checked">
+                    <label for="qcm6_1"><span class="bold">Les séquences sont des collections ordonnées d'éléments.</span>
+                    <span class="concealed wrong">Et non</span></label><br><br>
+
+                    <input type="radio" name="qcm6" id="qcm6_2" value="2">
+                    <label for="qcm6_2"><span class="bold">Les chaînes de caractères sont des séquences.</span>
+                    <span class="concealed wrong">Faux, c'est vrai !</span></label><br><br>
+
+                    <input type="radio" name="qcm6" id="qcm6_3" value="3">
+                    <label for="qcm6_3"><span class="bold">Les booléens sont des séquences.</span>
+                    <span class="concealed ok">C'est vrai que c'est faux !</span></label>
+                </fieldset>
+
+                <h4>Bonne chance ! 🤞🏻</h4>
             </div>
         </div>
         <div class="cslide-slide">

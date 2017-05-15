@@ -71,6 +71,10 @@ main {
 	/*border-radius: 15px 50px;*/
     border-radius: 10px 30px;
 }
+#codIT {
+    color: #FFF;
+    font-style: italic;
+}
 div#left {
     float: left;
     width: 33%;

@@ -168,11 +168,11 @@ nav div#logout p {
     transition: all 1s;
     transform-style: preserve-3d;
 }
-/*.flex-item.unlocked:hover {*/
-.flex-container.trophies .flex-item:hover {
+/* Disabled because doesn't work on mobile. */
+/*.flex-container.trophies .flex-item:hover, .flex-container.trophies .flex-item:focus {
     transform: rotateY(180deg);
     box-shadow: -3px 3px 1px rgba(0, 0, 0, 0.4);
-}
+}*/
 .heads, .tails {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -257,6 +257,12 @@ blockquote {
     padding-left: 15px;
     border-left: 3px solid #FDDC5F;
     font-style: italic;
+}
+.concealed {
+    display: none;
+}
+.ok {
+    color: #2AB77E;
 }
 
 /* Quizz */

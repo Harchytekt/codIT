@@ -85,6 +85,45 @@
         </div>
         <div class="cslide-slide">
             <div class="slide-content">
+                <h4>Voici un petit test <span class="italic">(facultatif)</span> pour voir où vous en êtes…</h4>
+
+                <fieldset class="qcm1">
+                    <legend>Question 1</legend>
+                    <label>Quel est le type de <span class="code">42.</span> ?</label><br><br>
+                    <input type="radio" name="qcm1" id="qcm1_1" value="1" checked="checked">
+                    <label for="qcm1_1"><span class="bold">int</span>
+                    <span class="concealed wrong">Non</span></label><br><br>
+
+                    <input type="radio" name="qcm1" id="qcm1_2" value="2">
+                    <label for="qcm1_2"><span class="bold">float</span>
+                    <span class="concealed ok">Correct</span></label><br><br>
+
+                    <input type="radio" name="qcm1" id="qcm1_3" value="3">
+                    <label for="qcm1_3"><span class="bold">bool</span>
+                    <span class="concealed wrong">Non</span></label>
+                </fieldset><br>
+
+                <fieldset class="qcm2">
+                    <legend>Question 2</legend>
+                    <label>Une chaîne de caractères est déterminée par :</label><br><br>
+                    <input type="radio" name="qcm2" id="qcm2_1" value="1" checked="checked">
+                    <label for="qcm2_1"><span class="bold">un point</span>
+                    <span class="concealed wrong">Non</span></label><br><br>
+
+                    <input type="radio" name="qcm2" id="qcm2_2" value="2">
+                    <label for="qcm2_2"><span class="bold">des apostrophes</span>
+                    <span class="concealed ok">Correct</span></label><br><br>
+
+                    <input type="radio" name="qcm2" id="qcm2_3" value="3">
+                    <label for="qcm2_3"><span class="bold">&lt; et &gt;</span>
+                    <span class="concealed wrong">Non</span></label>
+                </fieldset>
+
+                <h4>Maintenant que vous vous êtes testé, vous pouvez continuer ! 👨🏻‍💻</h4>
+            </div>
+        </div>
+        <div class="cslide-slide">
+            <div class="slide-content">
                 <h3>Variables</h3>
 
                 <p>
@@ -141,6 +180,45 @@
 </pre>
 
                 </p>
+            </div>
+        </div>
+        <div class="cslide-slide">
+            <div class="slide-content">
+                <h4>C'est l'avant-dernier petit QCM du chapitre !</h4>
+
+                <fieldset class="qcm3">
+                    <legend>Question 1</legend>
+                    <label>Une variable est…</label><br><br>
+                    <input type="radio" name="qcm3" id="qcm3_1" value="1" checked="checked">
+                    <label for="qcm3_1"><span class="bold">un nom qui fait référence à une valeur.</span>
+                    <span class="concealed ok">Correct !</span></label><br><br>
+
+                    <input type="radio" name="qcm3" id="qcm3_2" value="2">
+                    <label for="qcm3_2"><span class="bold">l'adresse vers une valeur.</span>
+                    <span class="concealed wrong">Mauvais</span></label><br><br>
+
+                    <input type="radio" name="qcm3" id="qcm3_3" value="3">
+                    <label for="qcm3_3"><span class="bold">une instruction qui permet de créer une nouvelle variable.</span>
+                    <span class="concealed wrong">Non</span></label>
+                </fieldset><br>
+
+                <fieldset class="qcm4">
+                    <legend>Question 2</legend>
+                    <label>Choisissez la bonne réponse :</label><br><br>
+                    <input type="radio" name="qcm4" id="qcm4_1" value="1" checked="checked">
+                    <label for="qcm4_1"><span class="bold">une variable est un nombre.</span>
+                    <span class="concealed wrong">Mauvais</span></label><br><br>
+
+                    <input type="radio" name="qcm4" id="qcm4_2" value="2">
+                    <label for="qcm4_2"><span class="bold">une valeur contient une variable.</span>
+                    <span class="concealed wrong">Non</span></label><br><br>
+
+                    <input type="radio" name="qcm4" id="qcm4_3" value="3">
+                    <label for="qcm4_3"><span class="bold">on peut réaffecter une valeur à une variable.</span>
+                    <span class="concealed ok">Correct</span></label>
+                </fieldset>
+
+                <h4>Et on continue… 👉🏻</h4>
             </div>
         </div>
         <div class="cslide-slide">
@@ -220,6 +298,45 @@
                 <blockquote>
                     Les opérateurs ayant la même précédence sont évalués de gauche à droite.
                 </blockquote>
+            </div>
+        </div>
+        <div class="cslide-slide">
+            <div class="slide-content">
+                <h4>Un dernier avant le grand test !</h4>
+
+                <fieldset class="qcm5">
+                    <legend>Question 1</legend>
+                    <label>Le modulo est :</label><br><br>
+                    <input type="radio" name="qcm5" id="qcm5_1" value="1" checked="checked">
+                    <label for="qcm5_1"><span class="bold">le résultat de la division entière.</span>
+                    <span class="concealed wrong">Non</span></label><br><br>
+
+                    <input type="radio" name="qcm5" id="qcm5_2" value="2">
+                    <label for="qcm5_2"><span class="bold">un opérande.</span>
+                    <span class="concealed wrong">Mauvais</span></label><br><br>
+
+                    <input type="radio" name="qcm5" id="qcm5_3" value="3">
+                    <label for="qcm5_3"><span class="bold">le reste de la division entière.</span>
+                    <span class="concealed ok">C'est bon !</span></label>
+                </fieldset><br>
+
+                <fieldset class="qcm6">
+                    <legend>Question 2</legend>
+                    <label>Qu'est-ce qui est faux ?</label><br><br>
+                    <input type="radio" name="qcm6" id="qcm6_1" value="1" checked="checked">
+                    <label for="qcm6_1"><span class="bold">L’ordre de précédence des opérateurs est le même qu’en mathématiques.</span>
+                    <span class="concealed wrong">Et non</span></label><br><br>
+
+                    <input type="radio" name="qcm6" id="qcm6_2" value="2">
+                    <label for="qcm6_2"><span class="bold">Les exposants passent avant les parenthèses.</span>
+                    <span class="concealed ok">Correct</span></label><br><br>
+
+                    <input type="radio" name="qcm6" id="qcm6_3" value="3">
+                    <label for="qcm6_3"><span class="bold">Les opérandes peuvent être des valeurs ou des variables.</span>
+                    <span class="concealed wrong">Non</span></label>
+                </fieldset>
+
+                <h4>Ce n'est plus qu'une question de temps… ⏱</h4>
             </div>
         </div>
         <div class="cslide-slide">

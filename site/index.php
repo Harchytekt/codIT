@@ -61,17 +61,21 @@
                     <h3>Présentation</h3>
                     <div class="insideText">
                         <p>
-                            Facere ut quis ipsa ex sapiente. Nihil repellat in
-                            quaerat dignissimos sed eos impedit voluptatem.<br>
-                            Ut nulla id dolorem debitis.
+                            <span id="codIT">codIT</span> vous permet d'apprendre
+                            les bases de la programmation à l'aide de Python.<br>
+                            L’apprentissage se fera en trois étapes :
                         </p>
-                        <p>
-                            Libero aut distinctio ipsam quos sunt vel.
-                            Consequatur eum iure nihil fugiat et. Provident nisi
-                            praesentium saepe. Ipsum repellat dolorem nihil nam eos
-                            suscipit consectetur. Dolorem sit non debitis velit
-                            nostrum quaerat.
-                        </p>
+                        <ol>
+                            <li>
+                                Apprentissage théorique accompagné d'exemples.
+                            </li>
+                            <li>
+                                Après chaque partie théorique, exercices pour fixer la matière.
+                            </li>
+                            <li>
+                                QCM noté sur 10 requerrant une cote minimale de 7/10 pour le passage au chapitre suivant.
+                            </li>
+                        </ol>
                     </div>
                 </div>
                 <div class="test" id="center">

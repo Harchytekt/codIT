@@ -121,6 +121,16 @@
             $(document).ready(function() {
                 $('.tab.trophies').attr('id', 'current');
                 $('nav').stop().toggle( 'slide' );
+
+                $('.flex-container.trophies').children().mouseenter(function() {
+                    $(this).css('transform', 'rotateY(180deg)');
+                    $(this).css('box-shadow', '-3px 3px 1px rgba(0, 0, 0, 0.4)');
+                });
+                $('.flex-container.trophies').children().mouseleave(function() {
+                    $(this).css('transform', 'rotateY(0deg)');
+                    $(this).css('box-shadow', '3px 3px 1px rgba(0, 0, 0, 0.4)');
+                });
+
             });
         </script>
     </body>
