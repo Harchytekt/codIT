@@ -22,7 +22,8 @@ if ($allSign_ok) {
         // use exec() because no results are returned
         $bd->exec($str);
 
-        $reponse = $bd->query("SELECT user_id FROM Users WHERE username = '$username';");
+        $reponse = $bd->prepare("SELECT user_id FROM Users WHERE username = '$username';");
+        $reponse->execute();
         $donnees = $reponse->fetch();
         $uid = $donnees['user_id'];
         $reponse->closeCursor(); // Termine le traitement de la requête

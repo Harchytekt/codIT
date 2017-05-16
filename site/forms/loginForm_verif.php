@@ -9,7 +9,8 @@ if ($allLog_ok) {
     include 'connexion/connexion.php';
 
     $str = "SELECT user_id, active FROM Users WHERE username <=> '$uname' AND password <=> '$pwd';";
-    $reponse = $bd->query($str);
+    $reponse = $bd->prepare($str);
+    $reponse->execute();
     $donnees = $reponse->fetch();
     if ($donnees['user_id'] == null OR $donnees['active'] == 0) {
         $target = "index.php?error=1";

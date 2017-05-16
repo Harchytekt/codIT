@@ -9,7 +9,8 @@
     }
 
     include('../connexion/connexion.php');
-    $reponse    = $bd->query("SELECT * FROM Users WHERE user_id = $current_id;");
+    $reponse    = $bd->prepare("SELECT * FROM Users WHERE user_id = $current_id;");
+    $reponse->execute();
     $donnees    = $reponse->fetch();
     $username   = $donnees['username'];
     include('../connexion/verifModifAcc.php');
@@ -35,7 +36,8 @@
             <?php
                 include '../connexion/connexion.php';
                 $str = "SELECT username, user_id, lastname, firstname, mail FROM Users WHERE user_id = $current_id;";
-                $reponse = $bd->query($str);
+                $reponse = $bd->prepare($str);
+                $reponse->execute();
                 $donnees = $reponse->fetch();
                 $name = (empty($donnees['firstname'])) ? $donnees['username'] : $donnees['firstname'];
             ?>

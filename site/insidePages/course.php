@@ -9,7 +9,8 @@
     }
 
     include '../connexion/connexion.php';
-    $reponse = $bd->query("SELECT chapter, state FROM Results NATURAL JOIN Tests WHERE user_id = {$_SESSION['current_user_id']} AND chapter != 1;");
+    $reponse = $bd->prepare("SELECT chapter, state FROM Results NATURAL JOIN Tests WHERE user_id = {$_SESSION['current_user_id']} AND chapter != 1;");
+    $reponse->execute();
     //Retourne tous les chapitres (autre que le premier) de l'utilisateur
 
     $_SESSION['res'] = 0;

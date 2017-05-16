@@ -9,7 +9,8 @@
     }
 
     include '../connexion/connexion.php';
-    $reponse = $bd->query("SELECT chapter, score, state FROM Results NATURAL JOIN Tests WHERE user_id = {$_SESSION['current_user_id']};");
+    $reponse = $bd->prepare("SELECT chapter, score, state FROM Results NATURAL JOIN Tests WHERE user_id = {$_SESSION['current_user_id']};");
+    $reponse->execute();
 ?>
 <!DOCTYPE html>
 <html>
