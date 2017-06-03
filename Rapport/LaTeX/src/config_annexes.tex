@@ -1,0 +1,74 @@
+\makeatletter
+ 
+% modification de la toc pour faire pouvoir spécifier le fichier à lire
+\renewcommand\tableofcontents[1][toc]{%
+	\if@twocolumn
+		\@restonecoltrue\onecolumn
+	\else
+		\@restonecolfalse
+	\fi
+	\chapter*{\contentsname}
+	\addcontentsline{toc}{chapter}{\contentsname}% on en profite pour faire apparaitre la toc dans la toc
+	\@starttoc{#1}%
+	\if@restonecol\twocolumn\fi
+}
+ 
+% création d'une macro se comportant comme \chapter qui va se substituer 
+% à cette dernière lors de l'appel d'\appendix
+\def\@appendix[#1]#2{
+	\ifnum \c@secnumdepth >\m@ne
+		\if@mainmatter
+			\refstepcounter{chapter}%
+			\typeout{\@chapapp\space\thechapter.}%
+			\addcontentsline{toa}{chapter}%
+				{\protect\numberline{\thechapter}#1}%
+		\else
+			\addcontentsline{toa}{chapter}{#1}%
+		\fi
+	\else
+		\addcontentsline{toa}{chapter}{#1}%
+    \fi
+	\chaptermark{#1}%
+	\addtocontents{lof}{\protect\addvspace{10\p@}}%
+	\addtocontents{lot}{\protect\addvspace{10\p@}}%
+	\if@twocolumn
+		\@topnewpage[\@makechapterhead{#2}]%
+	\else
+		\@makechapterhead{#2}%
+		\@afterheading
+	\fi
+}
+ 
+% création d'une macro identique à \@makechapterhead pour modifier 
+% l'apparence des titres des annexes
+\def\@makeappendixhead#1{%
+	\vspace*{50\p@}%
+	{\parindent \z@ \raggedright \normalfont
+	\ifnum \c@secnumdepth >\m@ne
+		\if@mainmatter
+			\huge\bfseries \@chapapp\space \thechapter\space:
+		\fi
+	\fi
+	\interlinepenalty\@M
+	\Huge \bfseries #1\par\nobreak
+	\vskip 40\p@}%
+}
+ 
+% creation d'une macro \l@appendix qui va remplacer \l@chapter
+\def\l@appendix#1#2{\@dottedtocline{1}{1.5em}{2.3em}{#1}{#2}}
+ 
+% modification de la commande \appendix pour qu'elle déporte 
+% les annexes dans le fichier toa
+\def\appendix{
+	\global\let\@chapter\@appendix% on remplace \@chapter par \@appendix
+	\global\let\@makechapterhead\@makeappendixhead% on remplace \@makechapterhead par \@makeappendixhead
+	\global\let\l@chapter\l@appendix% on remplace \l@chapter par \l@appendix
+	\par\setcounter{chapter}{0}%
+	\setcounter{section}{0}%
+	\gdef\@chapapp{\appendixname}%
+	\gdef\thechapter{\@Alph\c@chapter}%
+	\gdef\contentsname{Table des annexes}% on en profite pour faire des ajustements cosmetiques
+	\tableofcontents[toa]% affichage de la toa
+}
+ 
+\makeatother

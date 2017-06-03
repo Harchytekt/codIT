@@ -1,0 +1,70 @@
+\section{État des lieux}
+\label{sec:etat-lieux}
+
+
+\subsection{Étapes de création}
+\label{subsec:etapes-de-création}
+
+Lors de la phase de préparation du site, j'ai débuté par la création de maquettes \textit{(voir\textbf{~\nameref{sec:maquettes}})} afin de partir sur une idée concrète du projet.\\
+
+Je me suis ensuite engagé dans la phase d'écriture des chapitres et des questionnaires. \\
+Le premier jet comptait trois chapitres (\textit{les variables, les booléens et la complexité}), dont le dernier était trop complexe pour débuter dans la programmation.\\
+Il est resté à son état d'origine, et n'est donc pas disponible dans le site.\\
+
+Après ces deux phases, est venue celle de la création du squelette du site en HTML et CSS, suivie de \textit{\textbf{très}} près par l'ajout des effets en JavaScript. \\
+
+À ce moment, le projet a été mis en pause dans le but :
+\begin{enumerate}
+
+    \item de concevoir et de préparer la présentation du projet;
+    \item d'étudier pendant le pré-blocus de Pâques;
+    \item d'avancer dans les autres projets, dont celui du cours d'\textit{Initiation aux nano-ordinateurs} qui devait être achevé pour le 12 mai.\\
+    
+\end{enumerate}
+
+La phase suivante a été l'une des plus importantes du projet : c'est la liaison du site à la base de données. \\
+En effet, le site est désormais dynamique :
+\begin{itemize}
+
+    \item[$\bullet$] L'accès aux chapitres n'est plus permis que s'ils ont été débloqués dans la base de données;
+    \item[$\bullet$] Les résultats obtenus à la fin des chapitres, et disponibles dans les trophées, proviennent aussi de la base de données.\\
+    
+\end{itemize}
+
+La dernière phase - \textit{la phase de finalisation} - consiste à la réécriture des chapitres existants (\textit{les variables et les booléens}) ainsi qu'à l'écriture des autres chapitres (\textit{l'introduction, les conditions et les boucle}s) et à l'ajout des différents questionnaires. \\
+Bien entendu, tout au long de cette période, le site a été testé de manière à ce qu'il soit le plus stable possible.
+
+\newpage
+
+
+\subsection{Choix des technologies}
+\label{subsec:choix-des-technologies}
+
+Vu la nature du projet, \textit{un site web dynamique}\footnote{Un site dynamique est un site dont les données proviennent d’une base de données.}, j'ai utilisé les langages suivants :
+\begin{itemize}
+
+    \item[$\bullet$] le HTML et le CSS pour la création du site;
+    \item[$\bullet$] le JavaScript (\textit{et le jQuery}) pour l'ajout d'animations et d'effets;
+    \item[$\bullet$] le PHP et le MySQL pour la connexion au site et l'accès à la base de données. \\
+
+\end{itemize}
+
+Pendant les premières phases du projet, l'éventualité d'utiliser \textit{Bootstrap} et le framework PHP \textit{Laravel} est apparue. \\
+
+\textbf{Bootstrap} est une collection d'outils utile à la création du design de sites et d'applications web [\textit{sic}]\footnote{\url{https://fr.wikipedia.org/wiki/Bootstrap_(framework)}}. \\
+Ces outils - \textit{composés de codes HTML et CSS} - permettent d'utiliser facilement des formulaires, des boutons, etc. \\
+Ils facilitent aussi la conception de sites web adaptatifs grâce à la décomposition du site en colonnes. \\
+
+Un framework évite de réinventer la roue en réutilisant ce qui a déjà été fait, utilisé et validé par de nombreux utilisateurs. \\
+Cela représente, donc, un gain de temps, de fiabilité et une facilité de mise à jour. \\
+\textbf{Laravel} regroupe aussi de nombreuses bibliothèques qui facilitent la gestion des sessions, l’authentification, un créateur de requêtes SQL,... \\
+
+Mais il y a un mais : pour les utiliser, il faut se documenter, apprendre et expérimenter, ce qui représente beaucoup de temps. Trop par rapport à celui que je possédais.
+
+Je ne les ai donc pas utilisés, mais j'ajouterai que la non utilisation de ces outils permet plus de libertés et de personnalisation du site.
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
