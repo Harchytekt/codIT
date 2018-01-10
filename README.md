@@ -10,4 +10,4 @@ The database was created with MySQL.
 The code is [here](site).  
 And the report is [here](https://github.com/Harchytekt/Rapports/blob/master/2015-2018%20(HeH)/2016-2017/Gestion%20de%20projets/Rapport.pdf)
 
-![Summary](Rapport/LaTeX/textures/images/annexes/site/21-Sommaire.png "Summary")
+![Summary](Preview.png "Summary")
